@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MyApp(),
+    const MyApp(),
   );
 }
 
@@ -17,17 +17,17 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.cyan[700],
         body: SafeArea(
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            CircleAvatar(
+            const CircleAvatar(
               radius: 50,
               backgroundImage: AssetImage('images/saeed.jpeg'),
             ),
-            Text('saeed bark',
+            const Text('saeed bark',
                 style: TextStyle(
                   fontFamily: 'PlayfairDisplay',
                   fontSize: 38,
                   color: Colors.white,
                 )),
-            Text('Programmer ',
+            const Text('Programmer ',
                 style: TextStyle(
                   fontSize: 20,
                   color: Colors.white,
@@ -41,26 +41,26 @@ class MyApp extends StatelessWidget {
             ),
             Card(
               color: Colors.white,
-              margin: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
               child: ListTile(
                 leading: Icon(
                   Icons.phone,
                   color: Colors.cyan[700],
                 ),
-                title: Text(
+                title: const Text(
                   '+222 26 10 44 70',
                   style: TextStyle(fontSize: 20, color: Colors.black87),
                 ),
               ),
             ),
             Card(
-              margin: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
               child: ListTile(
                 leading: Icon(
                   Icons.email,
                   color: Colors.cyan[700],
                 ),
-                title: Text(
+                title: const Text(
                   'saeed12@gmail.com',
                   style: TextStyle(fontSize: 20),
                 ),
